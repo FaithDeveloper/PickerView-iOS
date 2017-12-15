@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerView_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrQ-EH-3Ug">
+                                <rect key="frame" x="112" y="582" width="150" height="35"/>
+                                <color key="backgroundColor" red="0.48627450980392156" green="0.69019607843137254" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3Pi-De-fs6"/>
+                                    <constraint firstAttribute="width" constant="150" id="D4I-OE-Cqm"/>
+                                </constraints>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="_acitonButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xKS-jr-7kG"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="pal-eJ-7Lo">
+                                <rect key="frame" x="0.0" y="226" width="375" height="216"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="BNQ-wc-f8g"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="533032404.14203697">
+                                    <!--2017-11-22 08:33:24 +0000-->
+                                </date>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="LZ0-p6-zl9" appends="YES" id="zzF-d8-B5B"/>
+                                    <outletCollection property="gestureRecognizers" destination="LZ0-p6-zl9" appends="YES" id="cAc-z6-JSi"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="pal-eJ-7Lo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jyu-qW-lZc"/>
+                            <constraint firstItem="vrQ-EH-3Ug" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KeN-rp-SA2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vrQ-EH-3Ug" secondAttribute="bottom" constant="50" id="acU-F5-Wnf"/>
+                            <constraint firstItem="pal-eJ-7Lo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wHJ-7Q-dC3"/>
+                            <constraint firstItem="pal-eJ-7Lo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wg0-KA-75r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LZ0-p6-zl9" appends="YES" id="RoJ-Ob-EAl"/>
+                            <outletCollection property="gestureRecognizers" destination="LZ0-p6-zl9" appends="YES" id="sXG-EZ-t1v"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="_button" destination="vrQ-EH-3Ug" id="XsK-ry-Tt8"/>
+                        <outlet property="_datePicker" destination="pal-eJ-7Lo" id="rW7-Gn-Neh"/>
+                        <outlet property="_swipeGesture" destination="LZ0-p6-zl9" id="ob6-JT-qHi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="LZ0-p6-zl9"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
