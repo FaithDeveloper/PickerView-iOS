@@ -13,4 +13,4 @@ This is Sample Repository for Swift3 or Swift4
 
 #### 3. How to create this project.
 
-[Go PickerView](http://faithdeveloperstory.tistory.com/81)
+[Go WebSite](http://faithdeveloperstory.tistory.com/81)
