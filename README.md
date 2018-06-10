@@ -134,7 +134,11 @@ Gesture 입력 시 마다 "버튼" 동작을 disable 상태로 변경하고, **e
 1. **PickerView**의 **ValueChangedTimePicker()** 된 시점에 **Button enable** 처리
 
 ```swift
-@IBAction func ValueChangedTimePicker(_ sender: Any) {     self._button.setTitle("Completion", for: .normal)     self._button.isEnabled = true     self._button.backgroundColor = Utils.hexStringToUIColor(hex: "7CB0FF") }
+@IBAction func ValueChangedTimePicker(_ sender: Any) {
+    self._button.setTitle("Completion", for: .normal)
+    self._button.isEnabled = true
+    self._button.backgroundColor = Utils.hexStringToUIColor(hex: "7CB0FF")
+    }
 ```
 
 <br/>
