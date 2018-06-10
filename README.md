@@ -86,9 +86,9 @@ func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognize
 
 ## **3. 제스터 입력 시 마다 호출 하는 함수**
 
-Gesture 입력 시 마다 "버튼" 동작을 disable 상태로 변경하고, **extent**로 선언하였던 **waitTillDoneScrolling()**을 호출합니다.
+Gesture 입력 시 마다 "버튼" 동작을 disable 상태로 변경하고, **extent**로 선언하였던 **waitTillDoneScrolling()** 을 호출합니다.
 
-**waitTillDoneScrolling()**의 Closer로 선언한 Completion()이 호출되면 "버튼" 동작을 enable로 변경하여 동작할 수 있도록 합니다.
+**waitTillDoneScrolling()** 의 Closer로 선언한 Completion()이 호출되면 "버튼" 동작을 enable로 변경하여 동작할 수 있도록 합니다.
 
 ```swift
 // Guesture 동작 있을 때 마다 호출 합니다.
